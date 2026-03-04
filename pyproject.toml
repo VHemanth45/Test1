@@ -1,0 +1,19 @@
+[project]
+name = "test1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fitx>=1.0.1",
+    "fitz>=0.0.1.dev2",
+    "layoutparser>=0.3.4",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "opencv-python>=4.13.0.92",
+    "opencv-python-headless>=4.13.0.92",
+    "pymupdf>=1.27.1",
+    "python-docx>=1.2.0",
+    "scikit-image>=0.26.0",
+    "ultralytics>=8.3.0",
+]
