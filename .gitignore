@@ -7,3 +7,6 @@ __pycache__
 .ipynb_checkpoints
 
 .env
+/tilldate.md
+/ProjectKnowledge.md
+/Fine_tune_TrOCR_on_IAM_Handwriting_Database_using_Seq2SeqTrainer.ipynb

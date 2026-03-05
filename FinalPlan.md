@@ -318,7 +318,7 @@ Compare Tesseract output against ground truth transcripts:
 
 ### Step 8.2 — Train
 - Feed line image crops + ground truth text pairs into TrOCR
-- Train for 20 epochs initially
+- Train for 30 epochs initially
 - Check validation CER after every epoch
 - Stop when validation CER stops improving
 
