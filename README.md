@@ -1,6 +1,40 @@
+
+## Project Summary
+
+This project focuses on OCR for early modern printed Spanish documents in the RenAIssance GSoC 2026 workflow. The main goal was to build a robust pipeline that improves transcription quality from a strong baseline to a high-accuracy final system on a fixed validation set of 296 samples.
+
+
+## Pipeline Followed
+
+1. **Document Processing**
+	- Convert source PDFs into page images.
+	- Detect and crop text regions/lines for OCR-ready inputs.
+
+2. **Text-Image Alignment & Dataset Curation**
+	- Align line crops with ground-truth transcriptions.
+	- Correct misalignments and build clean train/validation data.
+
 <img width="1189" height="193" alt="image" src="https://github.com/user-attachments/assets/f0060de0-0e7e-4dc1-8003-bd1d94346104" />
 <img width="1189" height="159" alt="image" src="https://github.com/user-attachments/assets/446424fe-6235-44d8-8cfd-c0154c4d98de" />
 <img width="1489" height="881" alt="image" src="https://github.com/user-attachments/assets/d0656131-e1a2-44b1-9b93-d7157c6211dc" />
+
+
+3. **Baseline OCR Evaluation (Tesseract)**
+	- Establish baseline performance on the locked validation set.
+
+4. **Transformer OCR (TrOCR Fine-tuning)**
+	- Fine-tune TrOCR and evaluate with CER, WER, and chrF.
+
+5. **Convolutional-Recurrent OCR (Kraken CRNN)**
+	- Train/evaluate CRNN as the convolutional-recurrent architecture.
+	- Compare against baseline and TrOCR on the same validation split.
+
+6. **LLM Post-Correction**
+	- Apply contextual correction over OCR output.
+	- Re-evaluate to quantify final gains in CER/WER/chrF.
+
+7. **Final Comparison & Analysis**
+	- Report stage-wise improvements and select the best pipeline.
 
 
 ### Metrics Comparison Table
@@ -40,3 +74,4 @@
 | neos porque como por el matrimonio se hizieron am- | neos: porque como por el matrimonio se hizieron an- | neos: porque como por el matrimonio se hicieron an- |
 | bos una misma carne y sangre, no ay persona mas con- | bos vnamisma carne y sangte, no ay persona mas con- | bos una misma carne y sangre, no hay persona mas con- |
 | junta que ella, & sunevnares, & vnum fuppofitum, c. | junta que ella, de funt una rea, es unun suppositum, e | junta que ella, de fuit una res, es unum suppositum, et |
+
