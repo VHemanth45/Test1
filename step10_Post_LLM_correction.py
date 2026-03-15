@@ -8,6 +8,8 @@ from tqdm import tqdm
 import jiwer
 import nltk
 from nltk.translate.chrf_score import sentence_chrf
+from dotenv import load_dotenv
+import os
 
 # Ensure NLTK data is available
 try:
@@ -16,8 +18,8 @@ except LookupError:
     nltk.download('punkt')
     nltk.download('punkt_tab')
 
-# --- CONFIGURATION ---
-GEMINI_API_KEY = "AIzaSyAVIf28c-YkEa3Nnh3ulffR7Qo9Ha_ONtY" # <--- INSERT YOUR KEY HERE
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 INPUT_CSV = "kraken_eval_results.csv"
 OUTPUT_CSV = "llm_corrected_results_final.csv"
 
