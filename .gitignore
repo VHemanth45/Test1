@@ -10,3 +10,8 @@ __pycache__
 /tilldate.md
 /ProjectKnowledge.md
 /Fine_tune_TrOCR_on_IAM_Handwriting_Database_using_Seq2SeqTrainer.ipynb
+/kraken_gt
+/kraken_models
+/FinalPlan.md
+*.pt
+*.arrow
