@@ -22,8 +22,6 @@ except LookupError:
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 INPUT_CSV = "kraken_eval_results.csv"
 OUTPUT_CSV = "llm_corrected_results_final.csv"
-
-# OPTIMIZED FOR FREE TIER LIMITS
 CHUNK_SIZE = 35 # Processes 35 lines at a time (Only takes 9 requests total for 296 lines)
 MODEL_ID = 'gemini-2.5-flash'
 REQUEST_DELAY = 8.0 # Waits 8 seconds between chunks to guarantee we never hit the RPM ceiling
