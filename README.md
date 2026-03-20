@@ -65,6 +65,9 @@ By integrating these components into a complete OCR workflow, I developed a fina
 | CRNN → CRNN + LLM Correction             | 0.0928 → 0.0724           | 22%                  |
 | **Tesseract → Final (CRNN + LLM)** | **0.3553 → 0.0724** | **80%**        |
 
+<img width="866" height="820" alt="image" src="https://github.com/user-attachments/assets/ce36e1f4-f236-45f4-8570-0b298b239001" />
+
+
 | GroundTruth                                                  | CRNN Prediction                                           | LLM Corrected                                              |
 | ------------------------------------------------------------ | --------------------------------------------------------- | ---------------------------------------------------------- |
 | yor parte.                                                   | yor parte, a.                                             | yor parte, a.                                              |
